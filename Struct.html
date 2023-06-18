@@ -1,0 +1,66 @@
+<!doctype html>
+<html xmlns="http://www.wr.org/19999/xhtml" xml:lang="en" lang="de">
+<head>
+    <title>Struct</title>
+    <meta charset ="UTF-8"> 
+    <meta name="viewport" content ="width=device-width,initial scale =1.0"/> 
+    <meta name="mobile-web-app-capable, initial-scale =1" content ="yes"/>
+
+
+    <link rel="stylesheet" href="Stylesheet.css" type= "text/css"/>
+    <script src ="Scripts.js" type="text/javascript" defer> </script> 
+    <script src ="ajax.js" type ="text/javascript" > </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    
+    <noscript>
+        Sie haben JavaScript deaktiviert. Diese Seite benötigt zwingend JavaScript.
+    </noscript>
+</head>  
+
+<body class="page">
+
+    <header>
+        <p id="quizname" align="center"> Internet Technologien Beleg Quiz</p>
+    </header>
+    <main class="main_quiz">
+        <article id="haupt">
+            <form class=category_selection>
+                <input type="button" id="mathe" value="Mathe">
+                <input type="button" id="internettech" value="Internet Tech">
+                <input type="button" id="allgemein" value="Allgemeines Wissen">
+                <input type="button" id="rest" value="Extern">
+            </form>
+            <div class="aktuelle_frage">
+            <div id="fragendisplay">Quiz anwendung für Internet Tech Beleg</div>
+            <div class="answer_buttons" id="buttons">
+                <button class="button">Default</button><br>
+                <button class="button button_wrong">Falsche Antwort</button><br>
+                <button class="button button_correct">Richtige Antwort</button><br>
+                <button class="button button_default">Default </button><br>
+            </div>
+            <div class="aktuelle_fragennummer">
+                <div class="fragen_anzahl" id="fragennummer"> </div>
+            </div>
+            </div>
+            <div id="statistics" style="display: none;">
+                <h2>Your Statistics</h2>
+                <p id="stats_message"></p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="answer_count_display">
+            <div id="answer_count"> Correct answers: 0 / 0 </div>
+        </div>
+
+    </footer>
+    </div>
+</body>
+</html>

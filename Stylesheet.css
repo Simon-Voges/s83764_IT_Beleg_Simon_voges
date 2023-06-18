@@ -1,0 +1,180 @@
+html, body {
+    height: 99%;
+}
+
+header, footer {
+    padding: 0.5em;
+    border: 2px inset black;
+    border-radius: 20px;
+    height: auto;
+    width: 97%;
+    margin: 0px auto;
+}
+.main_quiz {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height:auto;
+}
+
+.haupt {
+    height:auto;
+}
+
+.haupt > * {
+    height:auto;
+    align-items: center;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+
+#fragennummer {
+    text-align: center;
+    font-size: 1em;
+    margin: auto 0;
+
+}
+
+main > * {
+    margin: 2px;
+    padding: 1em;
+    border: 3px inset black;
+    border-radius: 10px;
+    height: auto;
+
+}
+
+article {
+    background: goldenrod;
+    flex: 6 3 0%;
+
+}
+
+#quizname {
+    margin: 0;
+    padding: 0.2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size:50px;
+    line-height:55px;
+}
+
+#fragendisplay {
+    padding: 1.5em;
+    font-size: 1.2em;
+    text-align: center;
+    margin: auto 0;
+    word-break: keep-all;
+}
+
+.answer_buttons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align:center;
+    flex-wrap: wrap;
+}
+
+.aktuelle_frage {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    min-height: 80%;
+}
+
+.button {
+
+    border-radius: 10px;
+    background: blue;
+    color: #fff;
+    padding: 20px 30px;
+    width: 100%;
+    min-width: 8em;
+    font-size: 1em;
+    cursor: pointer;
+    white-space: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content:center;
+    overflow: hidden;
+    flex-grow: 1;  /* Allows buttons to grow in size */
+    flex-basis: 0; /* Sets initial size of the buttons to zero, allowing them to grow */
+    margin: 0.5em; /* Removes the automatic margin setting */
+    
+}
+
+.category_selection > * {
+position:center;
+margin-bottom: 1.5em;
+font-family: 'Times New Roman', Times, serif;
+width:15em;
+height: 3em;
+font-size: 1.5em;
+text-decoration: none;
+user-select: none;
+padding: 5px 1.5em;
+outline:none;
+border: 2px solid black;
+border-radius: 3px;
+align-items: stretch;
+align-content:center;
+justify-content: space-between;
+overflow:visible;
+}
+
+footer {
+    background:yellow;
+}
+
+@media all and (max-width: 60em) {
+
+    .main_quiz {
+        flex-direction: column;
+    }
+
+    header {
+        order: 0;
+    }
+
+
+
+    article {
+        order: 1;
+    }
+
+    
+
+    footer {
+        display: none;
+    }
+    .answer_buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .button{
+        width:100%;
+    }
+    
+    .category_selection > * {
+        display: inline;
+        margin: 0 auto;
+        position: center;
+        width: 32.2%;
+        height: auto;
+        font-size: 1em;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
