@@ -2,7 +2,7 @@
 # Beleg webbasiertes Lernprogramm
 - Simon Voges, s87364
 - Email: simon.voges@htw-dresden.de
-- [Link zur Webseite]() 
+- [Link zur Webseite](https://github.com/Simon-Voges/s83764_IT_Beleg_Simon_voges) 
 ---
 ## Bemerkung
 - Das Programm wurde im Browser `Firefox` überprüft
